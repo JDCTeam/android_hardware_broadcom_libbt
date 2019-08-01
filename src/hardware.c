@@ -1517,8 +1517,6 @@ void hw_sco_config(void)
 #else
     if (SCO_INTERFACE_I2S == sco_bus_interface) {
         hw_sco_i2spcm_config(SCO_CODEC_CVSD);
-    }else if(SCO_INTERFACE_PCM == sco_bus_interface) {
-        hw_sco_i2spcm_config(SCO_CODEC_CVSD);
     }
 
     if (bt_vendor_cbacks)
